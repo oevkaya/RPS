@@ -1,0 +1,23 @@
+Package: RPS
+Type: Package
+Title: Research Program Strategy (RPS)
+Version: 0.1.0
+Author: Ozan Evkaya <ozanevkaya@gmail.com>, Ekin Sibel Ceren <esceren24@gmail.com>
+Maintainer: Ozan Evkaya <ozanevkaya@gmail.com>, Antonia Krefeldschwalb@gmail.com <a.krefeldschwalb@gmail.com>
+Description: Provides the functionality  for the Research Program Strategy (RPS) 
+    as explained In Krefeld-Schwalb, Witte & Zenker (2018).
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
+Imports: 
+    ggplot2,
+    ggpubr,
+    ggtext,
+    patchwork,
+    gt,
+    magrittr
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
