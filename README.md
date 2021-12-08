@@ -1,13 +1,3 @@
-
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
-# ```{r, include = FALSE}
-# knitr::opts_chunk$set(
-#   collapse = TRUE, comment = "#>",
-#   fig.path = "man/figures/README-", out.width = "100%"
-# )
-# ```
-
 ## RPS package
 
 RPStest package is aimed to provide the functionality for the Research Program Strategy (RPS) as explained in the article **"Hypothesis-testing demands trustworthy data-a simulation approach to inferential statistics advocating the research program strategy"** by *Krefeld-Schwalb, Witte & Zenker (2018)*. 
