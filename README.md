@@ -1,16 +1,12 @@
----
-title: "RPS package"
-output: pdf_document
----
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE, comment = "#>",
-  fig.path = "man/figures/README-", out.width = "100%"
-)
-```
+# ```{r, include = FALSE}
+# knitr::opts_chunk$set(
+#   collapse = TRUE, comment = "#>",
+#   fig.path = "man/figures/README-", out.width = "100%"
+# )
+# ```
 
 ## RPS package
 
@@ -34,7 +30,7 @@ To install the package from the github repo, devtools is required and the packag
 # devtools::install_github("oevkaya/RPS")
 ```
 
-After installing the package from github repo; 
+After installing the package from github repo, call it;
 
 ```{r setup}
 library(RPS)
@@ -44,14 +40,14 @@ For more detailed calculations, interested reader is guided to look at the short
 
 ## Citation 
 
-If you use RPStest package, please cite it as;
+If you use RPS package, please cite it as;
 
-@misc{RPStest, 
+@misc{RPS, 
   author = {Evkaya, O., Krefeldschwalb, A., Zenker, F. and Ceren, E.S.},
-  title = {RPStest: An R package for the functionality of the Research Program Strategy (RPS)
+  title = {RPS: An R package for the functionality of the Research Program Strategy (RPS)
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{}}
+  howpublished = {\url{https://github.com/oevkaya/RPS}}
 }
 
 ## Contact 
