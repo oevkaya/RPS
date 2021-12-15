@@ -10,7 +10,7 @@ With this package, the researchers can easily reproduce the results mentioned in
 
 ## Installation 
 
-To install the package from the github repo, devtools is required and the package can be installed by using following code:
+To install the package from the github repo (Not in CRAN yet), devtools is required and the package can be installed by using following code:
 
 ```{r install}
 # First you need the devtools package
@@ -26,19 +26,7 @@ After installing the package from github repo, call it;
 library(RPS)
 ```
 
-For more detailed calculations, interested reader is guided to look at the short vignette for the usage.
-
-## Citation 
-
-If you use RPS package, please cite it as;
-
-@misc{RPS, 
-  author = {Evkaya, O., Krefeldschwalb, A., Zenker, F. and Ceren, E.S.},
-  title = {RPS: An R package for the functionality of the Research Program Strategy (RPS)
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/oevkaya/RPS}}
-}
+For more detailed calculations, interested reader is referred to the short vignette for the RPS usage.
 
 ## Contact 
 
@@ -46,13 +34,18 @@ For any questions and feedback, please dont hesitate to contact us via following
 
 * ozanevkaya@gmail.com
 
+* esceren24@gmail.com
+
 * a.krefeldschwalb@gmail.com
 
 * frank.zenker@boun.edu.tr
 
-* esceren24@gmail.com
+## Citation 
 
+- Krefeld-Schwalb, A., Witte Erich H., Zenker F. (2018). Hypothesis-Testing Demands Trustworthy Data - A Simulation Approach to Inferential Statistics Advocating the Research Program Strategy. Frontiers in Psychology, 9 (460). 
+DOI=10.3389/fpsyg.2018.00460, ISSN= 1664-1078.
 
+- Evkaya, O., Krefeld-Schwalb, A., Zenker, F. and Ceren, E.S., RPS: An R package for the functionality of the Research Program Strategy (RPS), GitHub, https://github.com/oevkaya/RPS
 
 
 
