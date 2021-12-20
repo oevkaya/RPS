@@ -1,10 +1,8 @@
 ## RPS package
 
-RPStest package is aimed to provide the functionality for the Research Program Strategy (RPS) as explained in the article **"Hypothesis-testing demands trustworthy data-a simulation approach to inferential statistics advocating the research program strategy"** by *Krefeld-Schwalb, Witte & Zenker (2018)*. 
+RPStest package is aimed to provide the functionality for the Research Program Strategy (RPS) as explained in the article **"Hypothesis-testing demands trustworthy data-a simulation approach to inferential statistics advocating the research program strategy"** by *Krefeld-Schwalb, Witte & Zenker (2018)*. The development version of RPS package is maintaining by Ozan Evkaya and Ekin Sibel Ceren. RPS is development version and feel free to contact for your questions and comments. 
 
-The idea for RPS originates with Erich H. Witte. Frank Zenker and Erich H. Witte jointly developed its presentation. Antonio Krefeld-Schwalb programed and ran the simulations. Erich H. Witte wrote the first draft of the manuscript; all authors edited it and approved the final version. The development version of RPS package is maintaining by Ozan Evkaya and Ekin Sibel Ceren. RPS is development version and feel free to contact for your questions and comments. 
-
-With this package, the researchers can easily reproduce the results mentioned in the Shinny-app 
+With this package, the researchers can reproduce the results mentioned in the following shinny-app 
 
 - https://antoniakrefeldschwalb.shinyapps.io/ResearchProgramStrategy/
 
