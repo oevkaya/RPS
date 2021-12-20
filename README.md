@@ -17,16 +17,40 @@ To install the package from the github repo (Not in CRAN yet), devtools is requi
 # install.packages("devtools")
 # library(devtools)
 
-# devtools::install_github("oevkaya/RPS")
+devtools::install_github("oevkaya/RPS")
 ```
 
-After installing the package from github repo, call it;
+After installing the package from github;
 
 ```{r setup}
 library(RPS)
 ```
 
-For more detailed calculations, interested reader is referred to the short vignette for the RPS usage.
+## Simple Usage
+
+RPS package provides five easy-to-use functions and attached two more functions for visualization and the summarization of the outputs. As an example, **samplesH1** function requires four arguments; 
+
+- Nsample
+
+- alpha
+
+- effectSize
+
+- pow
+
+```{r example}
+h1 <- RPS::samplesH1(Nsample = 100, alpha = 0.05, effectSize = 0.2, pow = 0.95)
+
+# From the output of samplesH1 function we have;
+# Estimated sample size is 
+h1$Nest
+
+# Non-centrality-parameter of the t-distribution representing H1
+h1$ncp
+
+```
+
+For more detailed calculations, interested reader is referred to the short vignette called **Intro_RPS**.
 
 ## Contact 
 
@@ -42,8 +66,7 @@ For any questions and feedback, please dont hesitate to contact us via following
 
 ## Citation 
 
-- Krefeld-Schwalb, A., Witte Erich H., Zenker F. (2018). Hypothesis-Testing Demands Trustworthy Data - A Simulation Approach to Inferential Statistics Advocating the Research Program Strategy. Frontiers in Psychology, 9 (460). 
-DOI=10.3389/fpsyg.2018.00460, ISSN= 1664-1078.
+- Krefeld-Schwalb, A., Witte Erich H., Zenker F. (2018). Hypothesis-Testing Demands Trustworthy Data - A Simulation Approach to Inferential Statistics Advocating the Research Program Strategy. Frontiers in Psychology, 9 (460). DOI=10.3389/fpsyg.2018.00460, ISSN= 1664-1078.
 
 - Evkaya, O., Krefeld-Schwalb, A., Zenker, F. and Ceren, E.S., RPS: An R package for the functionality of the Research Program Strategy (RPS), GitHub, https://github.com/oevkaya/RPS
 

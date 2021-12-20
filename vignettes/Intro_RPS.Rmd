@@ -10,7 +10,7 @@ vignette: >
 
 ### About package
 
-The goal of RPStest package is to provide the functionality for the Research Program Strategy (RPS) as explained in the article **"Hypothesis-testing demands trustworthy data-a simulation approach to inferential statistics advocating the research program strategy"** by *Krefeld-Schwalb, Witte & Zenker (2018)*. For more details about the theory, please have a look at the main paper and related technical appendix document from here, 
+The goal of RPS package is to provide the functionality for the Research Program Strategy (RPS) as explained in the article **"Hypothesis-testing demands trustworthy data-a simulation approach to inferential statistics advocating the research program strategy"** by *Krefeld-Schwalb, Witte & Zenker (2018)*. For more details about the theory, please have a look at the main paper and related technical appendix document; 
 
 - **Main paper:** https://www.frontiersin.org/articles/10.3389/fpsyg.2018.00460/full
 
@@ -42,30 +42,7 @@ The consecutive steps of the research program strategy (RPS) is summarized below
 
 In order to calculate these proportions we used the **density of the respective t-distributions** and calculated the one-sided *p*-values, *p*, as well as the the likelihood, L. The Wald-criterion, $\frac{1-\beta}{\alpha}$, was applied for interpreting the corresponding likelihood ratios in steps 3 to 5. As a criterion for substantial verification in step 6 we further used the ratio of the probability density function, pdf, at the $50$'th and $95$'th percentiles, $P50$ and $P95$, respectively.
 
-### Simple Usage
-
-RPStest provides five easy to use functions and attached two more functions for visualization and the summarization of the outputs. As an example, **samplesH1** function requires four arguments; 
-
-- Nsample
-
-- alpha
-
-- effectSize
-
-- pow
-
-```{r example}
-h1 <- RPS::samplesH1(Nsample = 100, alpha = 0.05, effectSize = 0.2, pow = 0.95)
-
-# From the output of samplesH1 function we have;
-# Estimated sample size is 
-h1$Nest
-
-# Non-centrality-parameter of the t-distribution representing H1
-h1$ncp
-```
-
-## Simulation Example 
+### Simulation Example 
 
 ```{r echo = T, eval = T}
 ## Number of simulated tests
