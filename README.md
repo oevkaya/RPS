@@ -37,7 +37,7 @@ RPS package provides five easy-to-use functions and attached two more functions 
 - pow
 
 ```{r example}
-h1 <- RPS::samplesH1(Nsample = 100, alpha = 0.05, effectSize = 0.2, pow = 0.95)
+h1 <- RPS::samplesH1(Nsample = 100, alpha = 0.05, effectSize = 0.1, pow = 0.95)
 
 # From the output of samplesH1 function we have;
 # Estimated sample size is 
