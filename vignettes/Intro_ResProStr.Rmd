@@ -3,7 +3,7 @@ title: "Intro_ResProStr"
 # output: rmarkdown::html_vignette
 output: pdf_document
 vignette: >
-  %\VignetteIndexEntry{Intro_RPS}
+  %\VignetteIndexEntry{Intro_ResProStr}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
