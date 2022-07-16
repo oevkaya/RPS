@@ -5,13 +5,13 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Research Program Strategy (RPS) • RPS</title>
+<title>Research Program Strategy (ResProStr) • ResProStr</title>
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="bootstrap-toc.css">
 <script src="bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
-<script src="pkgdown.js"></script><meta property="og:title" content="Research Program Strategy (RPS)">
+<script src="pkgdown.js"></script><meta property="og:title" content="Research Program Strategy (ResProStr)">
 <meta property="og:description" content="Provides the functionality for the Research Program Strategy (RPS) 
     as explained In Krefeld-Schwalb, Witte &amp; Zenker (2018).">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
@@ -33,7 +33,7 @@
         <span class="icon-bar"></span>
       </button>
       <span class="navbar-brand">
-        <a class="navbar-link" href="index.html">RPS</a>
+        <a class="navbar-link" href="index.html">ResProStr</a>
         <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.0.0</span>
       </span>
     </div>
@@ -51,7 +51,7 @@
   </a>
   <ul class="dropdown-menu" role="menu">
 <li>
-      <a href="articles/Intro_RPS.html">Intro_RPS</a>
+      <a href="articles/Intro_RPS.html">Intro_ResProStr</a>
     </li>
   </ul>
 </li>
@@ -70,9 +70,9 @@
   <div class="contents col-md-9">
 
 <div class="section level2">
-<h2 id="rps-package">RPS package<a class="anchor" aria-label="anchor" href="#rps-package"></a>
+<h2 id="resprostr-package">ResProStr package<a class="anchor" aria-label="anchor" href="#resprostr-package"></a>
 </h2>
-<p>RPS package is aimed to provide the functionality for the Research Program Strategy (RPS) as explained in the article <strong>“Hypothesis-testing demands trustworthy data-a simulation approach to inferential statistics advocating the research program strategy”</strong> by <em>Krefeld-Schwalb, Witte &amp; Zenker (2018)</em>. The development version of RPS package is maintaining by Ozan Evkaya and Ekin Sibel Ceren. RPS is development version and feel free to contact for your questions and comments.</p>
+<p>ResProStr package is aimed to provide the functionality for the Research Program Strategy (ResProStr) as explained in the article <strong>“Hypothesis-testing demands trustworthy data-a simulation approach to inferential statistics advocating the research program strategy”</strong> by <em>Krefeld-Schwalb, Witte &amp; Zenker (2018)</em>. The development version of ResProStr package is maintaining by Ozan Evkaya - Ekin Sibel Ceren and feel free to contact for your questions and comments.</p>
 <p>With this package, the researchers can reproduce the results mentioned in the following shinny-app</p>
 <ul>
 <li><a href="https://antoniakrefeldschwalb.shinyapps.io/ResearchProgramStrategy/" class="external-link uri">https://antoniakrefeldschwalb.shinyapps.io/ResearchProgramStrategy/</a></li>
@@ -83,26 +83,26 @@
 </h2>
 <p>To install the package from the github repo (Not in CRAN yet), devtools is required and the package can be installed by using following code:</p>
 <p><code>{r install} # install.packages("devtools") # library(devtools)</code></p>
-<p><code>{r install} devtools::install_github("oevkaya/RPS")</code></p>
+<p><code>{r install} devtools::install_github("oevkaya/ResProStr")</code></p>
 <p>After installing the package from github;</p>
-<p><code>{r setup} library(RPS)</code></p>
+<p><code>{r setup} library(ResProStr)</code></p>
 </div>
 <div class="section level2">
 <h2 id="simple-usage">Simple Usage<a class="anchor" aria-label="anchor" href="#simple-usage"></a>
 </h2>
-<p>RPS package provides five easy-to-use functions and attached two more functions for visualization and the summarization of the outputs. As an example, <strong>samplesH1</strong> function requires four arguments;</p>
+<p>ResProStr package provides five easy-to-use functions and attached two more functions for visualization and the summary of the outputs. As an example, <strong>samplesH1</strong> function requires four arguments;</p>
 <ul>
 <li><p>Nsample</p></li>
 <li><p>alpha</p></li>
 <li><p>effectSize</p></li>
 <li><p>pow</p></li>
 </ul>
-<p><code>{r example} h1 &lt;- RPS::samplesH1(Nsample = 100, alpha = 0.05, effectSize = 0.1, pow = 0.95)</code></p>
+<p><code>{r example} h1 &lt;- ResProStr::samplesH1(Nsample = 100, alpha = 0.05, effectSize = 0.1, pow = 0.95)</code></p>
 <p>From the output of samplesH1 function, estimated sample size is;</p>
 <p><code>{r sample} h1$Nest</code></p>
 <p>Non-centrality-parameter of the t-distribution representing H1</p>
 <p><code>{r ncpar} h1$ncp</code></p>
-<p>For more detailed calculations, interested reader is referred to the short vignette called <strong>Intro_RPS</strong>.</p>
+<p>For more detailed calculations, interested reader is referred to the short vignette called <strong>Intro_ResProStr</strong>.</p>
 </div>
 <div class="section level2">
 <h2 id="contact">Contact<a class="anchor" aria-label="anchor" href="#contact"></a>
@@ -120,21 +120,14 @@
 </h2>
 <ul>
 <li><p>Krefeld-Schwalb, A., Witte Erich H., Zenker F. (2018). Hypothesis-Testing Demands Trustworthy Data - A Simulation Approach to Inferential Statistics Advocating the Research Program Strategy. Frontiers in Psychology, 9 (460). DOI=10.3389/fpsyg.2018.00460, ISSN= 1664-1078.</p></li>
-<li><p>Evkaya, O., Krefeld-Schwalb, A., Zenker, F. and Ceren, E.S., RPS: An R package for the functionality of the Research Program Strategy (RPS), GitHub, <a href="https://github.com/oevkaya/RPS" class="external-link uri">https://github.com/oevkaya/RPS</a></p></li>
+<li><p>Evkaya, O., Krefeld-Schwalb, A., Zenker, F. and Ceren, E.S., ResProStr: An R package for the functionality of the Research Program Strategy (ResProStr), GitHub, <a href="https://github.com/oevkaya/RPS" class="external-link uri">https://github.com/oevkaya/RPS</a></p></li>
 </ul>
 </div>
 
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
-    <div class="links">
-<h2 data-toc-skip>Links</h2>
-<ul class="list-unstyled">
-<li><a href="https://cloud.r-project.org/package=RPS" class="external-link">View on CRAN</a></li>
-</ul>
-</div>
-
-<div class="license">
+    <div class="license">
 <h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li><a href="LICENSE.html">Full license</a></li>
@@ -146,7 +139,7 @@
 <div class="citation">
 <h2 data-toc-skip>Citation</h2>
 <ul class="list-unstyled">
-<li><a href="authors.html#citation">Citing RPS</a></li>
+<li><a href="authors.html#citation">Citing ResProStr</a></li>
 </ul>
 </div>
 
