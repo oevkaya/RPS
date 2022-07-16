@@ -1,4 +1,4 @@
-#' @title Creating samples from H1, given alpha, effect size (d) and power
+#' @title Sampling from a distribution of test results given H1
 #'
 #' @importFrom stats dt pt qnorm rnorm
 #'

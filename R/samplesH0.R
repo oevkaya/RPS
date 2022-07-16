@@ -1,4 +1,4 @@
-#' @title Samples from H0, given alpha, and power and d assumed
+#' @title Sampling from a distribution of test results given H0
 #'
 #' @importFrom stats sd
 #'

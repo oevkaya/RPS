@@ -10,7 +10,7 @@ vignette: >
 
 ### About package
 
-The goal of RPS package is to provide the functionality for the Research Program Strategy (RPS) as explained in the article **"Hypothesis-testing demands trustworthy data-a simulation approach to inferential statistics advocating the research program strategy"** by *Krefeld-Schwalb, Witte & Zenker (2018)*. For more details about the theory, please have a look at the main paper and related technical appendix document; 
+The goal of RPS package is to provide the functionality for the Research Program Strategy (RPS) as explained in the article **"Hypothesis-testing demands trustworthy data-a simulation approach to inferential statistics advocating the research program strategy"** by *Krefeld-Schwalb, Witte & Zenker (2018)*. For more details about the theory, please have a look at the main paper and related technical appendix document: 
 
 - **Main paper:** https://www.frontiersin.org/articles/10.3389/fpsyg.2018.00460/full
 
@@ -40,7 +40,7 @@ The consecutive steps of the research program strategy (RPS) is summarized below
 
 6. Substanstial Verification:$\displaystyle\frac{L(d =\delta|x)}{L(d=0|x)} > \frac{1-\beta}{\alpha} \cap \frac{L(d|x)}{L(d=\delta|x)} > \frac{pdf(P50|d)}{pdf(P95|d)} > 4$
 
-In order to calculate these proportions we used the **density of the respective t-distributions** and calculated the one-sided *p*-values, *p*, as well as the the likelihood, L. The Wald-criterion, $\frac{1-\beta}{\alpha}$, was applied for interpreting the corresponding likelihood ratios in steps 3 to 5. As a criterion for substantial verification in step 6 we further used the ratio of the probability density function, pdf, at the $50$'th and $95$'th percentiles, $P50$ and $P95$, respectively.
+In order to calculate these proportions we use the **density of the respective t-distributions** and calculated the one-sided *p*-values, *p*, as well as the likelihood, L. The Wald-criterion, $\frac{1-\beta}{\alpha}$, is applied for interpreting the corresponding likelihood ratios in steps 3 to 5. As a criterion for substantial verification in step 6 we further use the ratio of the probability density function, pdf, at the $50$'th and $95$'th percentiles, $P50$ and $P95$, respectively.
 
 ### Simulation Example 
 
@@ -58,7 +58,7 @@ effectSize = 0.2
 pow = 0.95
 ```
 
-Here, in the simulation example, the goal is to stimate the minimum sample size $N_{min}$ by using the effect size, $\delta$, and test power, $(1-\beta)$, which together determine the induction quality of data, between the conditions, $d=$ [`r effectSize`] and $(1-\beta)=$ [`r pow`]. 
+Here, in the simulation example, the goal is to estimate the minimum sample size $N_{min}$ by using the effect size, $\delta$, and test power, $(1-\beta)$, which together determine the induction quality of data, between the conditions, $d=$ [`r effectSize`] and $(1-\beta)=$ [`r pow`]. 
 
 For the above parameters, the estimated sample size is obtained as;
 
@@ -69,15 +69,15 @@ round(samph1$Nest, 0)
 
 ### Visualization
 
-For the visualizations of the outputs, separate functions are given in **ModelVis.R** file and the wrap-up function (**plot_RPS.R**) is ready to use by selection of the figures when all the necessary inputs are provided. Distinctly, the **ggplot2 syntax** was used for all figures in the package so the obtained graphs are different from the ones you observed in the Shinny app!
+For the visualizations of the output, separate functions are given in **ModelVis.R** file and the wrap-up function (**plot_RPS.R**) is ready to use by selection of the figures when all the necessary inputs are provided. Distinctly, the **ggplot2 syntax** was used for all figures in the package so the obtained graphs are different from the ones you observed in the Shinny app!
 
 The main tool is **plot_RPS.R**, as a wrap-up function to make a general visualization of the outputs by making selection. To illustrate,
 
 ```{r}
-sampH0 <- RPS::samplesH0(Nsample = 100, alpha = 0.05, effectSize = 0.2, 
+sampH0 <- RPS::samplesH0(Nsample = 100, alpha = 0.05, effectSize = 0.1, 
                              pow = 0.95)
 
-sampH1 <- RPS::samplesH1(Nsample = 100, alpha = 0.05, effectSize = 0.2, 
+sampH1 <- RPS::samplesH1(Nsample = 100, alpha = 0.05, effectSize = 0.1, 
                              pow = 0.95)
 
 sampEmp <- RPS::samplesEmp(Nsample = 100, N = 30, Temp = 3, alphaEmp = 0.05)
@@ -91,8 +91,10 @@ One can use the **Figure functions** separately,
 ```{r}
 sampH1 <- RPS::samplesH1(Nsample = 100, alpha = 0.05, effectSize = 0.2, pow = 0.95)
 
-# Run this function manually if you want from ModelVis.R script 
-# figure1(sampH1 = sampH1)
+# Run this function manually if you want from ModelVis.R script
+# Make sure that all necessary packages are already installed and ready to use 
+# lapply(c("ggplot2", "ggpubr", "ggtext"), require, character.only = TRUE)
+# figure1(sampH1)
 ```
 
 ### Summarizing Results

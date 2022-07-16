@@ -52,7 +52,7 @@ For more detailed calculations, interested reader is referred to the short vigne
 
 ## Contact 
 
-For any questions and feedback, please dont hesitate to contact us via following e-mail adresses:
+For any questions and feedback, please don't hesitate to contact us via following e-mail addresses:
 
 * ozanevkaya@gmail.com
 
