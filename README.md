@@ -71,7 +71,7 @@ For any questions and feedback, please don't hesitate to contact us via followin
 
 - Krefeld-Schwalb, A., Witte Erich H., Zenker F. (2018). Hypothesis-Testing Demands Trustworthy Data - A Simulation Approach to Inferential Statistics Advocating the Research Program Strategy. Frontiers in Psychology, 9 (460). DOI=10.3389/fpsyg.2018.00460, ISSN= 1664-1078.
 
-- Evkaya, O., Krefeld-Schwalb, A., Zenker, F. and Ceren, E.S., ResProStr: An R package for the functionality of the Research Program Strategy (ResProStr), GitHub, https://github.com/oevkaya/RPS
+- Evkaya, O., Krefeld-Schwalb, A., Zenker, F. and Ceren, E.S., ResProStr: An R package for the functionality of the Research Program Strategy (ResProStr), GitHub, https://github.com/oevkaya/ResProStr
 
 
 
