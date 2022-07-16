@@ -11,7 +11,7 @@
 #' @param sampEmp The result of samplesEmp function
 #' @param select The selection of plot options
 #'
-#' @return Plot summary of RPS. Based on the selection, different plots
+#' @return Plot summary of ResProStr. Based on the selection, different plots
 #' are generated;
 #' select = 1: Distribution of t-values for given H0 and H1
 #' select = 2: Proportion of LR as a function of criteria

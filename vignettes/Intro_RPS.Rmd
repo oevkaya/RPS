@@ -1,5 +1,5 @@
 ---
-title: "Intro_RPS"
+title: "Intro_ResProStr"
 # output: rmarkdown::html_vignette
 output: pdf_document
 vignette: >
@@ -10,13 +10,13 @@ vignette: >
 
 ### About package
 
-The goal of RPS package is to provide the functionality for the Research Program Strategy (RPS) as explained in the article **"Hypothesis-testing demands trustworthy data-a simulation approach to inferential statistics advocating the research program strategy"** by *Krefeld-Schwalb, Witte & Zenker (2018)*. For more details about the theory, please have a look at the main paper and related technical appendix document: 
+The goal of ResProStr package is to provide the functionality for the Research Program Strategy (ResProStr) as explained in the article **"Hypothesis-testing demands trustworthy data-a simulation approach to inferential statistics advocating the research program strategy"** by *Krefeld-Schwalb, Witte & Zenker (2018)*. For more details about the theory, please have a look at the main paper and related technical appendix document: 
 
 - **Main paper:** https://www.frontiersin.org/articles/10.3389/fpsyg.2018.00460/full
 
 - **Appendix:** https://osf.io/gaetn/
 
-### About RPS Description
+### About ResProStr Description
 
 Every step of our simulation mimics 100 t-values for one-sided t-tests sampled from two normal distributions featuring the same variance but different means. One mean is set to zero (x0), the other mean corresponds to the effect size $\delta$ of the focal condition (x1), such that $\displaystyle x1\sim Normal(\delta,1)$ and 
 $\displaystyle x0\sim Normal(0,1)$ The following equation is used o define the sample size, $N_{min}$, drawn from these distributions that is needed to achieve the power $(1-\beta)$ given $\alpha$-error, and the effect size $\delta$.
@@ -26,7 +26,7 @@ We next calculated the t-value based on the difference of the means, $\mu$, of t
 
 \begin{equation} \displaystyle t = (\mu_{x1}-\mu_{x0})/\sqrt{2/n}\end{equation}
 
-The consecutive steps of the research program strategy (RPS) is summarized below; 
+The consecutive steps of the Research Program Strategy (ResProStr) is summarized below; 
 
 1. Preliminary Discovery:$p \leq \alpha, \alpha \leq .05$,  unknown $\beta$
 
@@ -63,7 +63,7 @@ Here, in the simulation example, the goal is to estimate the minimum sample size
 For the above parameters, the estimated sample size is obtained as;
 
 ```{r echo=T, eval = T}
-samph1 <- RPS::samplesH1(Nsample = 100, alpha=alpha, effectSize = effectSize, pow = pow)
+samph1 <- ResProStr::samplesH1(Nsample = 100, alpha=alpha, effectSize = effectSize, pow = pow)
 round(samph1$Nest, 0)
 ```
 
@@ -74,22 +74,24 @@ For the visualizations of the output, separate functions are given in **ModelVis
 The main tool is **plot_RPS.R**, as a wrap-up function to make a general visualization of the outputs by making selection. To illustrate,
 
 ```{r}
-sampH0 <- RPS::samplesH0(Nsample = 100, alpha = 0.05, effectSize = 0.1, 
-                             pow = 0.95)
+sampH0 <- ResProStr::samplesH0(Nsample = 100, alpha = 0.05, 
+                               effectSize = 0.1, pow = 0.95)
 
-sampH1 <- RPS::samplesH1(Nsample = 100, alpha = 0.05, effectSize = 0.1, 
-                             pow = 0.95)
+sampH1 <- ResProStr::samplesH1(Nsample = 100, alpha = 0.05, 
+                                effectSize = 0.1, pow = 0.95)
 
-sampEmp <- RPS::samplesEmp(Nsample = 100, N = 30, Temp = 3, alphaEmp = 0.05)
+sampEmp <- ResProStr::samplesEmp(Nsample = 100, N = 30, Temp = 3, 
+                                 alphaEmp = 0.05)
 
 # About plotting, you can consider different selections by select argumen
-RPS::plot_RPS(sampH0 = sampH0, sampH1 = sampH1, sampEmp = sampleEmp, select = 1)
+ResProStr::plot_RPS(sampH0 = sampH0, sampH1 = sampH1, sampEmp = sampleEmp, select = 1)
 ```
 
 One can use the **Figure functions** separately,
 
 ```{r}
-sampH1 <- RPS::samplesH1(Nsample = 100, alpha = 0.05, effectSize = 0.2, pow = 0.95)
+sampH1 <- ResProStr::samplesH1(Nsample = 100, alpha = 0.05, 
+                               effectSize = 0.2, pow = 0.95)
 
 # Run this function manually if you want from ModelVis.R script
 # Make sure that all necessary packages are already installed and ready to use 
@@ -105,15 +107,16 @@ For the tabularization of the outputs, separate functions are given in
 ```{r}
 # The below results are necessary before creating tables generally
 # By using sampleH1
-samp30 <- RPS::samples30(Nsample = 100, alpha = 0.05, effectSize = 0.2,
+samp30 <- ResProStr::samples30(Nsample = 100, alpha = 0.05, effectSize = 0.2,
           pow = 0.95, samp = sampH1)
 
-sampEmp0 <- RPS::samplesEmp0(Nsample = 100, N = 30, Temp = 3, alphaEmp = 0.05)
+sampEmp0 <- ResProStr::samplesEmp0(Nsample = 100, N = 30, Temp = 3, 
+                                   alphaEmp = 0.05)
 
 # The creation of the 
 # Table 1: Proportion of correct positive results (prior to data collection)
 
-RPS::table_RPS(sampH0 = sampH0, sampH1 = sampH1, sampEmp = sampEmp,
+ResProStr::table_RPS(sampH0 = sampH0, sampH1 = sampH1, sampEmp = sampEmp,
           sampEmp0 = sampEmp0, samp30 = samp30, select = 1)
 ```
 

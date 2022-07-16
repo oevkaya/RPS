@@ -16,7 +16,7 @@ plot_RPS(sampH0 = sampH0, sampH1 = sampH1, sampEmp = sampEmp, select = 6)
 \item{select}{The selection of plot options}
 }
 \value{
-Plot summary of RPS. Based on the selection, different plots
+Plot summary of ResProStr. Based on the selection, different plots
 are generated;
 select = 1: Distribution of t-values for given H0 and H1
 select = 2: Proportion of LR as a function of criteria

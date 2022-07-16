@@ -32,7 +32,7 @@ Table1 <- function(sampH1, samp30){
                           paste("Substantial Verification if N'= N + N/2",
                           round(sampH1$Nest*.5),", 1-beta=",round(pow,2))), LR))
 
-  colnames(LR) = c("Step in RPS","Proportion")
+  colnames(LR) = c("Step in ResProStr","Proportion")
   Table <- LR %>% gt::gt(caption = "Proportion of correct positive results
                       (prior to data collection)")
   return(Table)
@@ -55,7 +55,7 @@ Table2 <- function(sampEmp0, sampEmp){
   LR = data.frame(cbind(c("4. Substantial Falsification",
                           "5. Preliminary Verification"), LR))
 
-  colnames(LR) = c("Step in RPS", "Proportion")
+  colnames(LR) = c("Step in ResProStr", "Proportion")
 
   Table <- LR %>%
   gt::gt(caption = " Proportion of false positive results (prior to data collection)")
@@ -80,7 +80,7 @@ LR = c(mean(sampEmp$Lplus0x/sampEmp$L0x >= sampEmp$pow / alphaemp),
 LR = data.frame(cbind(c("4. Substantial Falsification",
                         "5. Preliminary Verification"), LR))
 
-    colnames(LR) = c("Step in RPS", "Proportion")
+    colnames(LR) = c("Step in ResProStr", "Proportion")
 
     Table <- LR %>% gt::gt(caption = " Proportion of correct positive results (post-hoc)")
     return(Table)
@@ -117,7 +117,7 @@ LR = c(mean(sampH0$Lplus0x/sampH0$L0x >= pow/alpha),
 LR = data.frame(cbind(c("4. Substantial Falsification",
                         "5. Preliminary Verification") ,LR))
 
-colnames(LR) = c("Step in RPS", "Proportion")
+colnames(LR) = c("Step in ResProStr", "Proportion")
 
 Table <- LR %>%
   gt::gt(caption = " Proportion of false positive results (post-hoc)")

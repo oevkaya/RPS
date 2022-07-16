@@ -3,4 +3,6 @@
 ^README\.Rmd$
 ^LICENSE\.md$
 
+^docs
 
+^cran-comments\.md$

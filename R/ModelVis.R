@@ -23,7 +23,7 @@ figure1 <- function(sampH1) {
     # geom_histogram(aes(x = H1), fill = "blue", alpha = 0.4, stat = "bin", bins = 10) +
     labs(title = paste0("Distribution of t-values for given <span style = 'color: red;'>H0</span> and <span style = 'color: blue;'>H1</span>."),
          subtitle = c(paste0("d = ",d, ",", "N = ",round(sampH1$Nest), ",", "ncp = ",round(sampH1$ncp,2))),
-         caption = "RPS package") +
+         caption = "ResProStr package") +
     ggpubr::theme_pubr() +
     theme(plot.title = ggtext::element_markdown())
 
@@ -68,7 +68,7 @@ ggplot2::ggplot(LR_df, aes(fill = legend, y=value, x = names.arg)) +
   geom_text(aes(label = value), position=position_dodge(width=0.9)) +
   guides(fill = guide_legend(title="Criteria")) +
   labs(title = "Proportion of LR as a function of criteria",
-       caption = "RPS package") +
+       caption = "RResProStr package") +
   ggpubr::theme_pubr(legend = "bottom")
 
 }
@@ -103,7 +103,7 @@ figure3 <- function(sampH0, sampH1) {
     labs(title = paste0("Distribution of t-values for given <span style = 'color: red;'>H0</span> and <span style = 'color: blue;'>H1</span>,
                         adapted to d observed"),
          subtitle = c(paste0("True d = ",0, ",", "N = ",round(sampH0$Nest), ",", "ncp(emp) = ",round(sampH0$ncp,2))),
-         caption = "RPS package") +
+         caption = "ResProStr package") +
     ggpubr::theme_pubr() +
     theme(plot.title = ggtext::element_markdown())
 
@@ -150,7 +150,7 @@ figure4 <- function(sampH0) {
     geom_text(aes(label = value), position=position_dodge(width=0.9)) +
     guides(fill = guide_legend(title="Criteria")) +
     labs(title = "Proportion of LR as a function of selected criteria",
-         caption = "RPS package") +
+         caption = "ResProStr package") +
     theme_pubr(legend = "bottom")
 
 }
@@ -183,7 +183,7 @@ figure5 <- function(sampEmp) {
     # geom_histogram(aes(x = H1), fill = "blue", alpha = 0.4, stat = "bin", bins = 10) +
     labs(title = paste0("Distribution of t-values for given <span style = 'color: blue;'>H1</span> (=t empirical) and <span style = 'color: red;'>H0</span>. "),
          subtitle = c(paste0("1-beta = ", round(sampEmp$pow,2), ",", "d = ", round(sampEmp$d,2), ",", "ncp = ",round(sampEmp$Temp,2))),
-         caption = "RPS package") +
+         caption = "ResProStr package") +
     ggpubr::theme_pubr() +
     theme(plot.title = ggtext::element_markdown())
 
