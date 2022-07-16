@@ -11,10 +11,11 @@ With this package, the researchers can reproduce the results mentioned in the fo
 To install the package from the github repo (Not in CRAN yet), devtools is required and the package can be installed by using following code:
 
 ```{r install}
-# First you need the devtools package
 # install.packages("devtools")
 # library(devtools)
+```
 
+```{r install}
 devtools::install_github("oevkaya/RPS")
 ```
 
@@ -38,14 +39,18 @@ RPS package provides five easy-to-use functions and attached two more functions 
 
 ```{r example}
 h1 <- RPS::samplesH1(Nsample = 100, alpha = 0.05, effectSize = 0.1, pow = 0.95)
+```
 
-# From the output of samplesH1 function we have;
-# Estimated sample size is 
+From the output of samplesH1 function, estimated sample size is; 
+
+```{r sample}
 h1$Nest
+```
 
-# Non-centrality-parameter of the t-distribution representing H1
+Non-centrality-parameter of the t-distribution representing H1
+
+```{r ncpar}
 h1$ncp
-
 ```
 
 For more detailed calculations, interested reader is referred to the short vignette called **Intro_RPS**.
