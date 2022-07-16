@@ -2,7 +2,7 @@
 % Please edit documentation in R/samplesH0.R
 \name{samplesH0}
 \alias{samplesH0}
-\title{Samples from H0, given alpha, and power and d assumed}
+\title{Sampling from a distribution of test results given H0}
 \usage{
 samplesH0(Nsample = 100, alpha, effectSize, pow)
 }
@@ -24,7 +24,7 @@ ncp: non-centrality-parameter of the t-distribution representing H1
 demps: obtained empirical effectsize
 }
 \description{
-Samples from H0, given alpha, and power and d assumed
+Sampling from a distribution of test results given H0
 }
 \examples{
 \dontrun{

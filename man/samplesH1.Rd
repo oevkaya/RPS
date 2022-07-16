@@ -2,7 +2,7 @@
 % Please edit documentation in R/samplesH1.R
 \name{samplesH1}
 \alias{samplesH1}
-\title{Creating samples from H1, given alpha, effect size (d) and power}
+\title{Sampling from a distribution of test results given H1}
 \usage{
 samplesH1(Nsample = 100, alpha, effectSize, pow)
 }
@@ -25,7 +25,7 @@ Nsample: given sample size value
 d: given effectsize value
 }
 \description{
-Creating samples from H1, given alpha, effect size (d) and power
+Sampling from a distribution of test results given H1
 }
 \examples{
 \dontrun{
