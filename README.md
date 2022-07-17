@@ -84,7 +84,6 @@ If you use `ResProStr` package, please cite it:
   }
 ```
 
-# - Evkaya, O., Krefeld-Schwalb, A., Zenker, F. and Ceren, E.S., ResProStr: An R package for the functionality of the Research Program Strategy (ResProStr), GitHub, https://github.com/oevkaya/ResProStr
 
 
 
