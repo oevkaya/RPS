@@ -16,7 +16,7 @@ The original research paper:
 To install the package from the github repo (Not in CRAN yet), devtools is required and the package can be installed by using following code:
 
 
-```{r install}
+```r
 # install.packages("devtools")
 # library(devtools)
 devtools::install_github("oevkaya/ResProStr")
@@ -24,7 +24,7 @@ devtools::install_github("oevkaya/ResProStr")
 
 After installing the package from github;
 
-```{r setup}
+```r
 library(ResProStr)
 ```
 
@@ -40,19 +40,19 @@ ResProStr package provides five easy-to-use functions and attached two more func
 
 - pow
 
-```{r example}
+```r
 h1 <- ResProStr::samplesH1(Nsample = 100, alpha = 0.05, effectSize = 0.1, pow = 0.95)
 ```
 
 From the output of samplesH1 function, estimated sample size is; 
 
-```{r sample}
+```r
 h1$Nest
 ```
 
 Non-centrality-parameter of the t-distribution representing H1
 
-```{r ncpar}
+```r
 h1$ncp
 ```
 
