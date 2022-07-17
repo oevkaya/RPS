@@ -1,8 +1,8 @@
 ---
-title: "Intro_ResProStr"
+title: "Intro to ResProStr"
 output: pdf_document
 vignette: >
-  %\VignetteIndexEntry{Intro_ResProStr}
+  %\VignetteIndexEntry{Intro to ResProStr}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

@@ -77,9 +77,13 @@
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
 <p>To install the package from the github repo (Not in CRAN yet), devtools is required and the package can be installed by using following code:</p>
-<p><code>{r install} # install.packages("devtools") # library(devtools) devtools::install_github("oevkaya/ResProStr")</code></p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># install.packages("devtools")</span></span>
+<span><span class="co"># library(devtools)</span></span>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"oevkaya/ResProStr"</span><span class="op">)</span></span></code></pre></div>
 <p>After installing the package from github;</p>
-<p><code>{r setup} library(ResProStr)</code></p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">ResProStr</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="simple-usage">Simple Usage<a class="anchor" aria-label="anchor" href="#simple-usage"></a>
@@ -91,11 +95,14 @@
 <li><p>effectSize</p></li>
 <li><p>pow</p></li>
 </ul>
-<p><code>{r example} h1 &lt;- ResProStr::samplesH1(Nsample = 100, alpha = 0.05, effectSize = 0.1, pow = 0.95)</code></p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">h1</span> <span class="op">&lt;-</span> <span class="fu">ResProStr</span><span class="fu">::</span><span class="fu"><a href="reference/samplesH1.html">samplesH1</a></span><span class="op">(</span>Nsample <span class="op">=</span> <span class="fl">100</span>, alpha <span class="op">=</span> <span class="fl">0.05</span>, effectSize <span class="op">=</span> <span class="fl">0.1</span>, pow <span class="op">=</span> <span class="fl">0.95</span><span class="op">)</span></span></code></pre></div>
 <p>From the output of samplesH1 function, estimated sample size is;</p>
-<p><code>{r sample} h1$Nest</code></p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">h1</span><span class="op">$</span><span class="va">Nest</span></span></code></pre></div>
 <p>Non-centrality-parameter of the t-distribution representing H1</p>
-<p><code>{r ncpar} h1$ncp</code></p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">h1</span><span class="op">$</span><span class="va">ncp</span></span></code></pre></div>
 <p>For more detailed calculations, interested reader is referred to the short vignette called <strong>Intro_ResProStr</strong>.</p>
 </div>
 <div class="section level2">
