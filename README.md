@@ -6,16 +6,19 @@ With this package, the researchers can reproduce the results mentioned in the fo
 
 - https://antoniakrefeldschwalb.shinyapps.io/ResearchProgramStrategy/
 
+The original research paper: 
+
+- Krefeld-Schwalb, A., Witte Erich H., Zenker F. (2018). Hypothesis-Testing Demands Trustworthy Data - A Simulation Approach to Inferential Statistics Advocating the Research Program Strategy. Frontiers in Psychology, 9 (460). DOI=10.3389/fpsyg.2018.00460, ISSN= 1664-1078.
+
+
 ## Installation 
 
 To install the package from the github repo (Not in CRAN yet), devtools is required and the package can be installed by using following code:
 
+
 ```{r install}
 # install.packages("devtools")
 # library(devtools)
-```
-
-```{r install}
 devtools::install_github("oevkaya/ResProStr")
 ```
 
@@ -69,9 +72,19 @@ For any questions and feedback, please don't hesitate to contact us via followin
 
 ## Citation 
 
-- Krefeld-Schwalb, A., Witte Erich H., Zenker F. (2018). Hypothesis-Testing Demands Trustworthy Data - A Simulation Approach to Inferential Statistics Advocating the Research Program Strategy. Frontiers in Psychology, 9 (460). DOI=10.3389/fpsyg.2018.00460, ISSN= 1664-1078.
+If you use `ResProStr` package, please cite it:
 
-- Evkaya, O., Krefeld-Schwalb, A., Zenker, F. and Ceren, E.S., ResProStr: An R package for the functionality of the Research Program Strategy (ResProStr), GitHub, https://github.com/oevkaya/ResProStr
+```
+@Manual{,
+    title = {ResProStr: An R package for the functionality of the Research Program Strategy (ResProStr)},
+    author = {Ozan Evkaya, Antonia Krefeld-Schwalb, Frank Zenker, Ekin Ceren},
+    year = {2022},
+    note = {R package version 1.0.0},
+    url = {https://github.com/oevkaya/ResProStr},
+  }
+```
+
+# - Evkaya, O., Krefeld-Schwalb, A., Zenker, F. and Ceren, E.S., ResProStr: An R package for the functionality of the Research Program Strategy (ResProStr), GitHub, https://github.com/oevkaya/ResProStr
 
 
 

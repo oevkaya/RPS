@@ -1,12 +1,18 @@
 ---
 title: "Intro_ResProStr"
-# output: rmarkdown::html_vignette
-output: pdf_document
+output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Intro_ResProStr}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
 
 ### About package
 
@@ -119,21 +125,3 @@ sampEmp0 <- ResProStr::samplesEmp0(Nsample = 100, N = 30, Temp = 3,
 ResProStr::table_RPS(sampH0 = sampH0, sampH1 = sampH1, sampEmp = sampEmp,
           sampEmp0 = sampEmp0, samp30 = samp30, select = 1)
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
