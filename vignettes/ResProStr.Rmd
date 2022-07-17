@@ -1,6 +1,6 @@
 ---
 title: "Intro_ResProStr"
-output: rmarkdown::html_vignette
+output: pdf_document
 vignette: >
   %\VignetteIndexEntry{Intro_ResProStr}
   %\VignetteEngine{knitr::rmarkdown}
